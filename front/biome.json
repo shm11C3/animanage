@@ -6,7 +6,43 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "all": true,
+      "correctness": {
+        "noUndeclaredVariables": "off"
+      },
+      "style": {
+        "noImplicitBoolean": "off",
+        "useShorthandArrayType": "off"
+      }
+    }
+  },
+  "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "always",
+      "trailingComma": "all",
+      "arrowParentheses": "always",
+      "indentStyle": "tab",
+      "indentWidth": 2,
+      "lineWidth": 80
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    },
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "tab",
+      "indentWidth": 2,
+      "lineWidth": 80
     }
   }
 }

@@ -15,7 +15,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome lint ./src"
+    "lint": "biome lint ./src",
+    "check": "biome check ./src",
+    "format": "biome format ./src",
+    "lint:ci": "biome ci ./src"
   },
   "dependencies": {
     "next": "14.0.3",
