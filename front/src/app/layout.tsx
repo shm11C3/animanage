@@ -1,7 +1,7 @@
+import { Provider } from "jotai";
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
-import { Provider } from "jotai";
 
 const notoJp = Noto_Sans_JP({
 	weight: ["400", "500"],
