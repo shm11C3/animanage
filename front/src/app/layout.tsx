@@ -1,8 +1,13 @@
+import { Provider } from "jotai";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoJp = Noto_Sans_JP({
+	weight: ["400", "500"],
+	subsets: ["latin"],
+	display: "swap",
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -15,8 +20,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>{children}</body>
-		</html>
+		<Provider>
+			<html lang="ja">
+				<body className={notoJp.className}>{children}</body>
+			</html>
+		</Provider>
 	);
 }

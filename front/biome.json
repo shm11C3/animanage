@@ -13,6 +13,9 @@
       "style": {
         "noImplicitBoolean": "off",
         "useShorthandArrayType": "off"
+      },
+      "nursery": {
+        "all": false
       }
     }
   },
